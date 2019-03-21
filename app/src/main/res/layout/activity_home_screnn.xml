@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeScrenn">
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/default_bottom_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint = "@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:menu="@menu/bottom_navigation_main"
+        android:layout_alignParentLeft="true">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/default_bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+    <!--
+        app:itemBackgound - the background color to be used for the bottom navigation menu
+        app:itemIconTint - the tine to used for the icons in the bottom navigation menu
+        app:itemTextColor - the color to used for the text in the bottom navigation menu
+        app:menu - the resource to be used to display items in the bottom navigation menu
+    -->
+
+</RelativeLayout>

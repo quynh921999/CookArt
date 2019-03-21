@@ -1,0 +1,62 @@
+Index: app/src/main/res/layout/login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".MainActivity\">\n\n    \n    <android.support.v7.widget.CardView\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        app:cardCornerRadius=\"10dp\"\n        app:cardElevation=\"3dp\"\n        app:cardUseCompatPadding=\"true\"\n        app:cardPreventCornerOverlap=\"false\"\n        android:layout_marginBottom=\"20dp\"\n        android:layout_marginTop=\"20dp\"\n        android:layout_marginLeft=\"20dp\"\n        android:layout_marginRight=\"20dp\">\n        <RelativeLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\">\n            <LinearLayout\n                android:id=\"@+id/linearlayout1\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:gravity=\"center_horizontal\"\n                android:layout_marginTop=\"10dp\"\n                android:orientation=\"vertical\"\n                android:background=\"@color/red\">\n                <ImageView\n                    android:layout_width=\"50dp\"\n                    android:layout_height=\"50dp\"\n                    android:background=\"@drawable/square\"\n                    android:padding=\"10dp\"\n                    android:src=\"@drawable/ic_lock\"\n                    android:tint=\"@color/white\"\n                    />\n                <TextView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:fontFamily=\"sans-serif-medium\"\n                    android:text=\"ĐĂNG NHẬP\"\n                    android:textSize=\"22sp\"\n                    android:layout_marginTop=\"10dp\"\n                    android:layout_marginBottom=\"20dp\"\n                    android:textColor=\"@color/white\"/>\n            </LinearLayout>\n            <ImageView\n                android:id=\"@+id/image1\"\n                android:layout_width=\"30dp\"\n                android:layout_height=\"30dp\"\n                android:layout_below=\"@+id/linearlayout1\"\n                android:src=\"@drawable/rectangle\"\n                android:layout_marginTop=\"-15dp\"\n                android:rotation=\"45\"\n                android:layout_centerHorizontal=\"true\"/>\n            <RelativeLayout\n                android:id=\"@+id/relativeLayout1\"\n                android:layout_marginLeft=\"30dp\"\n                android:layout_marginRight=\"30dp\"\n                android:layout_marginTop=\"30dp\"\n                android:layout_below=\"@+id/image1\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\">\n                <ImageView\n                    android:id=\"@+id/imageView_user_ic\"\n                    android:layout_width=\"40dp\"\n                    android:layout_height=\"40dp\"\n                    android:background=\"@color/redLight\"\n                     android:src=\"@drawable/ic_person\"\n                    android:padding=\"8dp\"\n                    android:tint=\"@color/white\"/>\n                <EditText\n                    android:id=\"@+id/username_et\"\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_toRightOf=\"@+id/imageView_user_ic\"\n                    android:layout_alignBottom=\"@id/imageView_user_ic\"\n                    android:layout_alignParentTop=\"true\"\n                    android:hint=\"Tên đăng nhập\"\n                    android:paddingLeft=\"20dp\"\n                    android:textSize=\"15sp\"\n                    />\n\n            </RelativeLayout>\n\n            <RelativeLayout\n                android:id=\"@+id/relativeLayout2\"\n                android:layout_marginLeft=\"30dp\"\n                android:layout_marginRight=\"30dp\"\n                android:layout_marginTop=\"15dp\"\n                android:layout_below=\"@id/relativeLayout1\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\">\n                <ImageView\n                    android:id=\"@+id/imageView_password_ic\"\n                    android:layout_width=\"40dp\"\n                    android:layout_height=\"40dp\"\n                    android:background=\"@color/redLight\"\n                    android:src=\"@drawable/ic_pass\"\n                    android:padding=\"8dp\"\n                    android:tint=\"@color/white\"/>\n                <EditText\n                    android:id=\"@+id/pass_et\"\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"wrap_content\"\n                    android:inputType=\"textPassword\"\n                    android:layout_toRightOf=\"@+id/imageView_password_ic\"\n                    android:layout_alignBottom=\"@id/imageView_password_ic\"\n                    android:layout_alignParentTop=\"true\"\n                    android:hint=\"Mật khẩu\"\n                    android:paddingLeft=\"20dp\"\n                    android:textSize=\"15sp\"\n                    android:drawableRight=\"@drawable/ic_eye\"\n                    />\n\n            </RelativeLayout>\n            <RelativeLayout\n                android:id=\"@+id/relativeLayoutRe\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:layout_below=\"@+id/relativeLayout2\"\n                android:layout_marginTop=\"15dp\"\n                android:layout_marginLeft=\"30dp\"\n                android:layout_marginRight=\"30dp\">\n                <TextView\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:text=\"Quên mật khẩu?\"\n                    android:textColor=\"@color/black\"\n                    android:textSize=\"15sp\"\n                    android:layout_marginLeft=\"100dp\"\n\n                    />\n\n            </RelativeLayout>\n            <RelativeLayout\n                android:id=\"@+id/relativeLayout3\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"wrap_content\"\n                android:layout_below=\"@+id/relativeLayoutRe\"\n                android:layout_marginTop=\"30dp\"\n                android:layout_marginRight=\"30dp\"\n                android:layout_marginLeft=\"30dp\">\n\n                <Button\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_marginLeft=\"20dp\"\n                    android:background=\"@drawable/btn_gg\"\n                    android:text=\"ĐĂNG NHẬP\"\n                    android:textColor=\"@color/white\"\n                    android:fontFamily=\"sans-serif-medium\"/>\n                <Button\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_marginRight=\"20dp\"\n                    android:layout_marginLeft=\"200dp\"\n                    android:background=\"@drawable/btn_gg\"\n                    android:text=\"ĐĂNG KÝ\"\n                    android:textColor=\"@color/white\"/>\n            </RelativeLayout>\n            <ImageView\n                android:id=\"@+id/imageView_dash\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"2dp\"\n                android:layout_below=\"@+id/relativeLayout3\"\n                android:layout_marginTop=\"60dp\"\n                android:layerType=\"software\"\n                android:src=\"@drawable/dash\"\n                android:layout_marginLeft=\"30dp\"\n                android:layout_marginRight=\"30dp\"/>\n            <TextView\n                android:id=\"@+id/text\"\n                android:layout_width=\"wrap_content\"\n                android:layout_height=\"wrap_content\"\n                android:layout_below=\"@+id/imageView_dash\"\n                android:layout_marginTop=\"10dp\"\n                android:text=\"Đăng nhâp bằng tài khoản khác\"\n                android:textColor=\"@color/black\"\n                android:textSize=\"15dp\"\n                android:layout_centerHorizontal=\"true\"/>\n            <LinearLayout\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:layout_below=\"@+id/text\"\n                android:layout_marginTop=\"20dp\"\n                android:layout_marginRight=\"30dp\"\n                android:layout_marginLeft=\"30dp\">\n                <Button\n                    android:id=\"@+id/fb_btn\"\n                    android:layout_width=\"match_parent\"\n                    android:layout_height=\"wrap_content\"\n                    android:background=\"@drawable/background_btn\"\n                    android:text=\"Đăng nhập bằng facebook\"\n                    android:textColor=\"@color/white\"\n                    android:clickable=\"true\" />\n\n\n            </LinearLayout>\n\n        </RelativeLayout>\n\n    </android.support.v7.widget.CardView>\n\n\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/login.xml	(revision 1eb49521986cfed5cb2ee709a6ca664b8e5335cc)
++++ app/src/main/res/layout/login.xml	(date 1551709198000)
+@@ -1,3 +1,4 @@
++
+ <?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+@@ -6,7 +7,7 @@
+     android:layout_height="match_parent"
+     tools:context=".MainActivity">
+ 
+-    
++
+     <android.support.v7.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+@@ -69,7 +70,7 @@
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+                     android:background="@color/redLight"
+-                     android:src="@drawable/ic_person"
++                    android:src="@drawable/ic_person"
+                     android:padding="8dp"
+                     android:tint="@color/white"/>
+                 <EditText
+@@ -113,7 +114,6 @@
+                     android:hint="Mật khẩu"
+                     android:paddingLeft="20dp"
+                     android:textSize="15sp"
+-                    android:drawableRight="@drawable/ic_eye"
+                     />
+ 
+             </RelativeLayout>
+@@ -125,14 +125,15 @@
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginRight="30dp">
+-                <TextView
+-                    android:layout_width="wrap_content"
++                <EditText
++                    android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+-                    android:text="Quên mật khẩu?"
+-                    android:textColor="@color/black"
++                    android:inputType="textPassword"
++                    android:drawableLeft="@drawable/ic_lock_open_black_24dp"
++                    android:hint="Nhập lại mật khẩu"
++                    android:paddingLeft="10dp"
++                    android:drawablePadding="15dp"
+                     android:textSize="15sp"
+-                    android:layout_marginLeft="100dp"
+-
+                     />
+ 
+             </RelativeLayout>

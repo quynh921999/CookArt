@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG KÝ"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Tên dăng nhập"
+            android:background="@drawable/et_style"/>
+        <EditText
+            android:id="@+id/e_mail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:background="@drawable/et_style"/>
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Quê quán"
+            android:ems="10"
+            android:background="@drawable/et_style"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:background="@drawable/et_style"/>
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="460dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Nhắc lại mật khẩu"
+            android:inputType="textPassword"
+            android:background="@drawable/et_style"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="540dp"
+            android:text="Đăng ký"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/btn_gg"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

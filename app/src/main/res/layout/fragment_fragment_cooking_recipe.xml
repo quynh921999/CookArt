@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentCookingRecipe">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/cookingRecipeBar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CookArt"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_search"
+                    android:background="@drawable/custom_search_btn"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="51dp"
+        android:background="@color/gray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="170dp"
+                android:text="Đăng Công Thức"
+                android:background="@drawable/custom_button"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="Đăng Hình Ành"
+                />
+           <android.support.v7.widget.CardView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               app:cardCornerRadius="8dp"
+               app:cardMaxElevation="9dp"
+               app:cardElevation="1dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:scaleType="centerCrop"
+                       android:layout_centerHorizontal="true"
+                       android:id="@+id/image_person_cooking_recipe"
+                       android:src="@drawable/ic_launcher_background" />
+               </RelativeLayout>
+
+           </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="140dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@+id/rvKindOfFood"
+                    android:scrollbars="none">
+
+                </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="món ăn nổi "
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="xem thêm >"
+                    android:background="@color/white"
+                    android:textColor="#8c8c8c"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:id="@+id/rvPopularFood">
+                </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="món ăn xem gần đây"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="xem thêm >"
+                    android:background="@color/white"
+                    android:textColor="#8c8c8c"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:id="@+id/rvRecentlySee">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+    // this for listview horizontal
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:scrollbars="none"
+        android:id="@+id/rvVertical">
+    </android.support.v7.widget.RecyclerView>
+
+
+</FrameLayout>
