@@ -14,4 +14,13 @@
         <item name="colorControlHighlight">#b2dfdb</item>
         <item name="colorButtonNormal">#009688</item>
     </style>
+
+    <style name="LoginActivityTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LoginActivityTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="LoginActivityTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

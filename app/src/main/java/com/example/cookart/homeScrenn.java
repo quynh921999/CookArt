@@ -1,6 +1,7 @@
 package com.example.cookart;
 
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -8,7 +9,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 
 public class homeScrenn extends AppCompatActivity {
     private BottomNavigationView mMainNav;
@@ -31,6 +34,7 @@ public class homeScrenn extends AppCompatActivity {
         fragmentMenu = new fragmentMenu();
         fragmentNotification = new fragmentNotification();
         fragmentPersonal = new fragmentPersonal();
+
 
         // set default fragment is homefragment
         setFragment(fragmentHome);
@@ -63,7 +67,11 @@ public class homeScrenn extends AppCompatActivity {
                 }
             }
         });
+
+
     }
+
+
 
 
     private void setFragment(Fragment fragment) {

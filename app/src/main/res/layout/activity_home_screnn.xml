@@ -33,5 +33,4 @@
         app:itemTextColor - the color to used for the text in the bottom navigation menu
         app:menu - the resource to be used to display items in the bottom navigation menu
     -->
-
 </RelativeLayout>

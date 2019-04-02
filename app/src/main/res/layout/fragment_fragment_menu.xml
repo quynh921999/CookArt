@@ -26,22 +26,25 @@
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:layout_centerVertical="true"/>
-                <ImageView
+                <ImageButton
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="5dp"
                     android:src = "@drawable/ic_addfood"
+                    android:tint="@color/white"
+                    android:background="@color/colorPrimary"
                     android:id="@+id/ic_addFood"
                     android:layout_centerVertical="true"/>
-                <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="60dp"
                     android:src="@drawable/ic_add_shopping"
+                    android:layout_centerVertical="true"
                     android:tint="@color/white"
-                    android:layout_centerVertical="true"/>
+                    android:background="@color/colorPrimary"/>
 
             </RelativeLayout>
         </android.support.v7.widget.Toolbar>

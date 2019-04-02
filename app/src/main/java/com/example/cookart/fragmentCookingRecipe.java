@@ -1,7 +1,11 @@
 package com.example.cookart;
 
 
+import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.example.cookart.Adapter.itemAdapter;
 import com.example.cookart.Adapter.kindOfFoodAdapter;
@@ -42,6 +47,8 @@ public class fragmentCookingRecipe extends Fragment {
     private ArrayList<singleItemModel> arrayListFoodRecently = new ArrayList<>();
     private itemAdapter recentlyFoodAdapter;
     private RecyclerView rvRecentlyFood;
+
+    private ImageButton createNewRecipe_btn;
 
     public fragmentCookingRecipe() {
         // Required empty public constructor
@@ -79,8 +86,21 @@ public class fragmentCookingRecipe extends Fragment {
         setDataOnRecentlyFood();
 
 
+        createNewRecipe_btn = view.findViewById(R.id.ic_newRecipe);
         return view;
 
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        createNewRecipe_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), createNewRecipe.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private  void setDataOnPopularFood() {
